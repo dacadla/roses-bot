@@ -15,9 +15,10 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
-client.once(Events.ClientReady, () => {
-	console.log('Ready!');
+client.once(Events.ClientReady, c => {
+	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
+
 
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
