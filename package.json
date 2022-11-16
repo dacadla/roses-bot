@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node .",
     "push": "node deploy-commands-public.js",
-    "private": "node deploy-commands.js"
+    "private": "node deploy-commands.js",
+    "remove": "node remove-commands.js"
   },
   "keywords": [],
   "author": "",
