@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "commands": "node deploy-commands.js"
+    "push": "node deploy-commands-public.js",
+    "private": "node deploy-commands.js"
   },
   "keywords": [],
   "author": "",
